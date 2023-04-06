@@ -1,0 +1,32 @@
+{
+  "license": "MIT",
+  "version": "1.0.0",
+  "name": "almost-compare",
+  "repository": "stacew/almost-compare",
+  "author": "stacew",
+  "description": "This package provides utility functions for comparing floating-point numbers with a default tolerance value of the floating-point epsilon.",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "microbundle-crl --no-compress --format modern,cjs",
+    "build:watch": "microbundle-crl watch --no-compress --format modern,cjs",
+    "test": "jest"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^12.12.38",
+    "jest": "^29.5.0",
+    "microbundle-crl": "^0.13.10",
+    "ts-jest": "^29.0.5",
+    "typescript": "*"
+  },
+  "files": [
+    "dist"
+  ]
+}
